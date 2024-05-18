@@ -1,0 +1,318 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+      
+.head-container {
+    max-height: 17vh;
+    background-color: aliceblue;
+}
+
+.nav-links,
+.head-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .train-name-extra, */
+nav,
+.time,
+.time1,
+.user,
+.left,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+nav p {
+    font-size: 30px;
+}
+
+.nav-links {
+    justify-content: center;
+    padding: 20px auto;
+    gap: .5rem;
+    list-style: none;
+    font-size: .8rem;
+}
+
+.nav-links li a:hover {
+    display: inline-block;
+    list-style: none;
+    background-color: #2b509a;
+    color: #fff
+}
+
+.nav-links li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-decoration-color: white;
+}
+
+.nav-links li a.active {
+    padding: 10px;
+    color: #fff;
+    background-color: #2b509a;
+    cursor: pointer;
+}
+
+.logo {
+    background-color: white;
+    margin: 10px 20px 10px 30px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+
+.user {
+    background-color: white;
+    margin: 10px 10px 10px 30px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+
+}
+
+.username {
+    margin: 10px 40px 10px 0;
+    font-size: 20px;
+}
+
+.logo a,
+.user a {
+    text-decoration: none;
+    color: #131921;
+
+}
+
+.logo i,
+.user i {
+    font-size: 30px;
+}
+
+.logo:hover,
+.user:hover {
+    cursor: default;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-bar a {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+/* MAIN */
+
+#main {
+    height: fit-content;
+    background-color: lightgrey;
+}
+
+.main-container {
+    padding: 8vh 20vw 10vh;
+}
+
+.find-schedule {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-top: 5px solid blue;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.find-schedule input {
+    font-size: 15px;
+}
+
+.find-date{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+}
+
+.find-date a{
+    text-decoration: none;
+}
+
+.find-journey {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+
+/* FILTER SCHEDULE */
+
+.filter-schedule {
+    border-top: 5px solid blue;
+    max-width: 15vw;
+    height: fit-content;
+    margin-top: 15px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.filter-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reset {
+    border: none;
+    background-color: #fff;
+    color: blue;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.quota {
+    width: 15vw;
+    display: flex;
+    align-items: center;
+}
+
+/* Train cards */
+
+
+.journey-time,
+.train-time,
+.train-coach-book-card,
+.train-no-name,
+.train-name-extra,
+.left-right {
+    display: flex;
+}
+
+.train-card {
+    border-left: 5px solid blue;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    background-color: #fff;
+}
+
+.train-schedule {
+    margin: 15px 0 0 15px;
+    height: fit-content;
+    width: 100%;
+    font-size: 18px;
+}
+
+.train-no-name,
+.train-coach-book-card {
+    justify-content: space-between;
+    align-items: center;
+}
+.train-no-name{
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.train-time {
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.jouney-time p {
+    color: grey;
+}
+
+.journey-time hr {
+    width: 25px;
+    height: 0.5px;
+    margin-top: 9px;
+}
+
+/* button */
+
+.book-now-btn {
+    margin: 10px 0 5px;
+    padding: 8px;
+    background-color: #ee7524;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.book-now-btn:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+
+/* Footer */
+
+.foot-1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.foot-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* foot-3 */
+
+.foot-3 {
+    background-color: #222F3E;
+    border-top: 0.5px solid white;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-4 {
+    background-color: #131921;
+    color: white;
+    height: 70px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.pages {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    padding-top: 5px;
+}
+
+.error-msg {
+    margin: 15px 0 0 15px;
+    padding: 20px 50px;
+    color: red;
+}
